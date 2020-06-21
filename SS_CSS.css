@@ -1,0 +1,23 @@
+body{
+	background: url(backgroundg.jpg);
+	background-repeat: repeat;
+	height: 5000px;
+}
+
+.imgcontainer{
+	position: fixed;
+	/*top: -300px; /* Top = -300px for middle of katana*/
+	right: 0px;
+	max-width: 100%;
+
+}
+
+
+#blade{
+	z-index: 1;
+}
+
+#scabbard{
+	z-index: 2;
+	right: 0px; /* Max Scroll = 1502px*/
+}
