@@ -1,0 +1,27 @@
+<!doctype=html>
+<link rel='stylesheet' type='text/css' href='SS_CSS.css'>
+<html>
+<title>Shusui Scroll</title>
+<head></head>
+<body>
+	
+	<div class='imgcontainer' id='scabbard'><img src='scabbard.png'></div>
+	<div class='imgcontainer' id='blade'><img src='blade.png'></div>
+
+
+	<script>
+		window.addEventListener('scroll', () => {
+			const scrolled = window.scrollY;
+			const scrollable = document.documentElement.scrollHeight - window.innerHeight; 
+
+			const scrollperc = (scrolled/scrollable);
+			console.log(scrollperc);
+
+			var elem = document.querySelector('#scabbard');
+			elem.style.right = 1502*scrollperc;
+		})
+	</script>
+
+
+</body>
+</html>
